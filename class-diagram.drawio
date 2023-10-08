@@ -1,0 +1,440 @@
+<mxfile host="65bd71144e">
+    <diagram id="35rbz2cMFURh9ewFK-A6" name="Page-1">
+        <mxGraphModel dx="918" dy="1780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="106" style="edgeStyle=none;html=1;" parent="1" source="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#6a00ff;strokeColor=#3700CC;strokeWidth=2;" parent="1" source="2" target="108" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="370" y="120"/>
+                            <mxPoint x="1430" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="CacherModel" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="180" width="460" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="2" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;# connectRef: Connection&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="3" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="2" vertex="1">
+                    <mxGeometry x="10" y="110" width="430" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- addNewCacher(Cacher cacher): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="7" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getAllCachers(): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="7" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getCacherWithId(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="7" vertex="1">
+                    <mxGeometry y="90" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getCacherId(Cacher cacher): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="7" vertex="1">
+                    <mxGeometry y="130" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="MainModel" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="-200" width="460" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="108" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;# connectRef: Connection&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="109" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- dbFilePath: String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="109" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="108" vertex="1">
+                    <mxGeometry x="10" y="160" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- connectToDB(): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="111" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ prepareDB(): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="111" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="OrderModel" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="180" width="840" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="118" vertex="1">
+                    <mxGeometry x="10" y="30" width="810" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;# connectRef: Connection&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="119" vertex="1">
+                    <mxGeometry y="30" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="118" vertex="1">
+                    <mxGeometry x="10" y="110" width="810" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ addNewOrder(Order order): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="121" vertex="1">
+                    <mxGeometry y="30" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getTotalPriceFor&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;AllOrdersIn&lt;/span&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;SpecificPeriod(Date date1, Date date2): ResultSet&amp;nbsp;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="121" vertex="1">
+                    <mxGeometry y="60" width="810" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getTotalPriceForOrdersInSpeceficPeriodForSpecificCacher(Date, date1, Date date2, Cacher cacher): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="121" vertex="1">
+                    <mxGeometry y="110" width="810" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="118" target="108" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="860" y="170" as="sourcePoint"/>
+                        <mxPoint x="1130" y="100" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1060" y="120"/>
+                            <mxPoint x="1430" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="133" value="ProductModel" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="2430" y="180" width="840" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="133" vertex="1">
+                    <mxGeometry x="10" y="30" width="810" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;# connectRef: Connection&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="134" vertex="1">
+                    <mxGeometry y="30" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="133" vertex="1">
+                    <mxGeometry x="10" y="110" width="810" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getAllProducts(): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="136" vertex="1">
+                    <mxGeometry y="30" width="810" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getProductDataWithId(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="136" vertex="1">
+                    <mxGeometry y="70" width="810" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getProductId(Product product): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="136" vertex="1">
+                    <mxGeometry y="110" width="810" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="SubOrderModel" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="1550" y="180" width="840" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="148" vertex="1">
+                    <mxGeometry x="10" y="30" width="810" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;# connectRef: Connection&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="149" vertex="1">
+                    <mxGeometry y="30" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="148" vertex="1">
+                    <mxGeometry x="10" y="110" width="810" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ addNewSubOrder(SubOrder subOrder): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="151" vertex="1">
+                    <mxGeometry y="30" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="148" target="108" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1589.9999999999995" y="160" as="sourcePoint"/>
+                        <mxPoint x="1960" y="50" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1970" y="120"/>
+                            <mxPoint x="1430" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="158" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;strokeWidth=2;" parent="1" target="108" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2850" y="180" as="sourcePoint"/>
+                        <mxPoint x="2310" y="70" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2850" y="120"/>
+                            <mxPoint x="1430" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="159" value="Cacher" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="3350" y="-130" width="460" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="159" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- name: String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="160" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- password: String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="160" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- id: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="160" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="159" vertex="1">
+                    <mxGeometry x="10" y="160" width="430" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getName(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="163" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getPassword(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="163" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="167" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getId(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="163" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="173" value="Product" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="3350" y="240" width="460" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="174" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="173" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- name: String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="174" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- id: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="174" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- price: double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="174" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- imagePath: String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="174" vertex="1">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="173" vertex="1">
+                    <mxGeometry x="10" y="200" width="430" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getName(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="178" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getPrice(): double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="178" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getId(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="178" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="182" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getImagePath(): string&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="178" vertex="1">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="185" value="Date" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="3350" y="620" width="460" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="186" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="185" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- year: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="186" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- month: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="186" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- day: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="186" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="185" vertex="1">
+                    <mxGeometry x="10" y="170" width="430" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getStringYear(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="191" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getStringMonth(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="191" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getStringDay(): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="191" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getIntValueOfDate(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="191" vertex="1">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getDateInStringForm(Char char): String&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="191" vertex="1">
+                    <mxGeometry y="150" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="SubOrder" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="3350" y="1000" width="460" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="197" vertex="1">
+                    <mxGeometry x="10" y="30" width="430" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- id: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="198" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- productId: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="198" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="201" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- quantity: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="198" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="202" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- totalPrice: double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="198" vertex="1">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="203" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="197" vertex="1">
+                    <mxGeometry x="10" y="200" width="430" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="206" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getQuantity(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="203" vertex="1">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="205" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getTotalPricce(): double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" parent="203" vertex="1">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="204" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ addNewSubOrder(): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#001DBC;fillColor=#0050ef;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;fontColor=#ffffff;" parent="203" vertex="1">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="207" value="Order" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="3350" y="1370" width="460" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="208" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="207">
+                    <mxGeometry x="10" y="30" width="430" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- id: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="208">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="210" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- price: double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="208">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- date: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="208">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="212" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- cacherId: int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="208">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="217" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- subOrders: ArrayList&amp;lt;SubOrder&amp;gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="208">
+                    <mxGeometry y="150" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="207">
+                    <mxGeometry x="10" y="230" width="430" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="214" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getId(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="215" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getPrice(): double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getDate(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="90" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="219" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getCacherId(): int&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="120" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="218" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getSubOrders(): ArrayList&amp;lt;SubOrder&amp;gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="150" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ appendSubOrder(SubOrder subOrder): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="213">
+                    <mxGeometry y="180" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="225" value="CacherController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="3880" y="-130" width="460" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="226" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="225">
+                    <mxGeometry x="10" y="30" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="227" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- model: CacherModel&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="226">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- view: CacherSignUI&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="226">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="230" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="225">
+                    <mxGeometry x="10" y="140" width="430" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="234" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getCacherWithId(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="230">
+                    <mxGeometry y="30" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="235" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getAllCacheres(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="230">
+                    <mxGeometry y="70" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ Sign(Cacher cacher): Cacher&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="230">
+                    <mxGeometry y="110" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="236" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- addNewCacher(Cacher cacher): Cacher&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="230">
+                    <mxGeometry y="150" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="240" value="Notes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="4370" y="-250" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="241" value="&lt;font color=&quot;#000066&quot;&gt;Build CRC and Class diagram for Date&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="240">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="ProductController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="3880" y="240" width="460" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="243" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="242">
+                    <mxGeometry x="10" y="30" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="244" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- model: ProductModel&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="243">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="245" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- view: MakeOrderView&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="243">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="246" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="242">
+                    <mxGeometry x="10" y="140" width="430" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="247" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getAllProducts(): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="246">
+                    <mxGeometry y="30" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getProductWithId(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="246">
+                    <mxGeometry y="70" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="252" value="SubOrderController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="3890" y="1000" width="460" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="253" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="252">
+                    <mxGeometry x="10" y="30" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="254" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- model: SubOrdertModel&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="253">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="255" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- view: Null&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="253">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="252">
+                    <mxGeometry x="10" y="140" width="430" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ addNewSubOrder(SubOrder subOrder): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="256">
+                    <mxGeometry y="30" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="SubOrderController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="3890" y="1370" width="590" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="259">
+                    <mxGeometry x="10" y="30" width="570" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- model: OrdertModel&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="260">
+                    <mxGeometry y="30" width="570" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="262" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- view: null&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="260">
+                    <mxGeometry y="60" width="570" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="259">
+                    <mxGeometry x="10" y="140" width="570" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="265" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ addNewOrder(): void&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#001DBC;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;fontColor=#ffffff;" vertex="1" parent="263">
+                    <mxGeometry y="30" width="570" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getTotalPriceOfOrdersWithCacherId(int id): double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#001DBC;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;fontColor=#ffffff;" vertex="1" parent="263">
+                    <mxGeometry y="60" width="570" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getTotalPriceOfOrdersWithSpecificPeriodOfDate(Date date1, Date date2): double&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#001DBC;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;fontColor=#ffffff;" vertex="1" parent="263">
+                    <mxGeometry y="90" width="570" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="268" value="AnalaticsController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="4400" y="-130" width="460" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="269" value="Attributes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="268">
+                    <mxGeometry x="10" y="30" width="430" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="270" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- cahcerController: CacherController&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="269">
+                    <mxGeometry y="30" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="271" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;- orderController: OrderControler&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;strokeColor=#4C0099;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;" vertex="1" parent="269">
+                    <mxGeometry y="60" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="272" value="Methods" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="268">
+                    <mxGeometry x="10" y="140" width="430" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="273" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getCacherWithId(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="272">
+                    <mxGeometry y="30" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="274" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ getAllCacheres(int id): ResultSet&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="272">
+                    <mxGeometry y="70" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="275" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px;&quot;&gt;+ Sign(Cacher cacher): Cacher&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/font&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=15;strokeColor=#4C0099;" vertex="1" parent="272">
+                    <mxGeometry y="110" width="430" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
