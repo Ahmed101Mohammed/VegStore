@@ -21,6 +21,14 @@ public class Order {
         this.price += subOrder.getTotalPrice();
     }
 
+    public void setAllSubOrdersId()
+    {
+        for(SubOrder subOrder:this.subOrders)
+        {
+            subOrder.setOrderId(this.id);
+        }
+    }
+
     public int getCacherId() {
         return cacherId;
     }
