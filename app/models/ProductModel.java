@@ -4,12 +4,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ProductModel extends MainModel{
+public class ProductModel extends Observable{
+    private MainModel mainModel = MainModel.createMainModel();
     private static ProductModel productModel;
 
     private ProductModel()
     {
-        this.buidProjectDB();
+        mainModel.buidProjectDB();
     }
 
     public static ProductModel createProductModel()
@@ -27,7 +28,7 @@ public class ProductModel extends MainModel{
         String getAllProductsQuery = "SELECT * FROM products;";
         try
         {
-            Statement getQuery = this.connectRef.createStatement();
+            Statement getQuery = mainModel.connectRef.createStatement();
             ResultSet allProducts = getQuery.executeQuery(getAllProductsQuery);
             return allProducts;
         }
@@ -44,7 +45,7 @@ public class ProductModel extends MainModel{
         String getProductWithIdQuery = "SELECT * FROM products WHERE id = "+ id+ " ;";
         try
         {
-            Statement getQuery = this.connectRef.createStatement();
+            Statement getQuery = mainModel.connectRef.createStatement();
             ResultSet allProducts = getQuery.executeQuery(getProductWithIdQuery);
             return allProducts;
         }

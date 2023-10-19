@@ -2,7 +2,7 @@ package app.models;
 
 import java.util.ArrayList;
 
-import app.IObserver;
+import app.views.IObserver;
 
 public abstract class Observable {
     private ArrayList<IObserver> views =  new ArrayList<>();

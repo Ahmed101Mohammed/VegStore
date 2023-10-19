@@ -11,7 +11,8 @@ import app.abstractData.Order;
 import app.abstractData.Product;
 import app.abstractData.SubOrder;
 
-public class OrderModel extends MainModel{
+public class OrderModel extends Observable{
+    private MainModel mainModel = MainModel.createMainModel();
     private static OrderModel orderModel;
     // main method for just testing:
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class OrderModel extends MainModel{
 
     private OrderModel()
     {
-        this.buidProjectDB();
+        mainModel.buidProjectDB();
     }
 
     public static OrderModel createOrderModel()
@@ -45,11 +46,11 @@ public class OrderModel extends MainModel{
         String insertOrderQuery = "INSERT INTO orders(cacher_id, price, date) VALUES(?,?,?);";
         try
         {
-            PreparedStatement insert = connectRef.prepareStatement(insertOrderQuery);
+            PreparedStatement insert = mainModel.connectRef.prepareStatement(insertOrderQuery);
             insert.setInt(1, order.getCacherId());
             insert.setDouble(2, order.getPrice());
             insert.setInt(3, order.getDate());
-            insert.executeUpdate();     
+            insert.executeUpdate();   
         }
         catch(SQLException e)
         {
@@ -65,7 +66,7 @@ public class OrderModel extends MainModel{
                                     + date1.getIntValueOfDate() +" AND " + date2.getIntValueOfDate() +";";
         try
         {
-            Statement getQuery = this.connectRef.createStatement();
+            Statement getQuery = this.mainModel.connectRef.createStatement();
             ResultSet result = getQuery.executeQuery(getTotalPriceQuery);
             return result;
         }
@@ -84,7 +85,7 @@ public class OrderModel extends MainModel{
                                     + date2.getIntValueOfDate() +";";
         try
         {
-            Statement getQuery = this.connectRef.createStatement();
+            Statement getQuery = this.mainModel.connectRef.createStatement();
             ResultSet result = getQuery.executeQuery(getTotalPriceQuery);
             return result;
         }
@@ -93,6 +94,23 @@ public class OrderModel extends MainModel{
             System.out.println(e.getMessage());
             System.out.println("Field to get the all prices of all orders in period from "+ date1.getDateInStringForm() + " to " + date2.getDateInStringForm()
                                 + ".");
+            return null;
+        }
+    }
+
+    public ResultSet getAllOrdersCount()
+    {
+        String getAllOrdersCountQuery = "SELECT COUNT(*) AS count FROM orders";
+        
+        try
+        {
+            Statement getQuery = this.mainModel.connectRef.createStatement();
+            ResultSet result = getQuery.executeQuery(getAllOrdersCountQuery);
+            return result;
+        }
+        catch(SQLException e)
+        {
+            System.out.println(e.getMessage());
             return null;
         }
     }

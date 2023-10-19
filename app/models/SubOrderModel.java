@@ -5,7 +5,8 @@ import java.sql.SQLException;
 
 import app.abstractData.SubOrder;
 
-public class SubOrderModel extends MainModel{
+public class SubOrderModel extends Observable{
+    private MainModel mainModel = MainModel.createMainModel();
     private static SubOrderModel subOrderModel;
     
     // main method just for testing:
@@ -18,7 +19,7 @@ public class SubOrderModel extends MainModel{
 
     private SubOrderModel()
     {
-        this.buidProjectDB();
+        mainModel.buidProjectDB();
     }
 
     public static SubOrderModel creatSubOrderModel()
@@ -35,7 +36,7 @@ public class SubOrderModel extends MainModel{
         String insertSubOrderQuery = "INSERT INTO sub_orders(order_id, product_id, quantity, total_price) VALUES(?,?,?,?);";
         try
         {
-            PreparedStatement insert = connectRef.prepareStatement(insertSubOrderQuery);
+            PreparedStatement insert = mainModel.connectRef.prepareStatement(insertSubOrderQuery);
             insert.setInt(1, subOrder.getOrderId());
             insert.setInt(2, subOrder.getProductId());
             insert.setInt(3, subOrder.getQuantity());

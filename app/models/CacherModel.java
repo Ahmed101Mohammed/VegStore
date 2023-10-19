@@ -7,7 +7,8 @@ import java.sql.SQLException;
 
 import app.abstractData.Cacher;
 
-public class CacherModel extends MainModel {
+public class CacherModel extends Observable{
+    private MainModel mainModel = MainModel.createMainModel();
     private static CacherModel cacherModel;
     // main method for just testing.
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class CacherModel extends MainModel {
 
     private CacherModel()
     {
-        this.buidProjectDB();
+        mainModel.buidProjectDB();
     }
 
     public static CacherModel createCacherModel()
@@ -35,10 +36,10 @@ public class CacherModel extends MainModel {
         String insertCacherQuery = "INSERT INTO cachers(name, password) VALUES(?,?);";
         try
         {
-            PreparedStatement insert = connectRef.prepareStatement(insertCacherQuery);
+            PreparedStatement insert = mainModel.connectRef.prepareStatement(insertCacherQuery);
             insert.setString(1, cacher.getName());
             insert.setString(2, cacher.getPassword());
-            insert.executeUpdate();     
+            insert.executeUpdate();    
         }
         catch(SQLException e)
         {
@@ -53,7 +54,7 @@ public class CacherModel extends MainModel {
 
         try
         {
-            Statement getAllCachers = connectRef.createStatement();
+            Statement getAllCachers = mainModel.connectRef.createStatement();
             ResultSet resultSet = getAllCachers.executeQuery(getAllCachersQuery);
             return resultSet;
         }
@@ -71,7 +72,7 @@ public class CacherModel extends MainModel {
 
         try
         {
-            Statement getCacherWithIdQuery = connectRef.createStatement();
+            Statement getCacherWithIdQuery = mainModel.connectRef.createStatement();
             ResultSet resultSet = getCacherWithIdQuery.executeQuery(getCacherWithId);
             return resultSet;
         }
@@ -88,7 +89,7 @@ public class CacherModel extends MainModel {
 
         try
         {
-            Statement getIdOfCacherQuery = connectRef.createStatement();
+            Statement getIdOfCacherQuery = mainModel.connectRef.createStatement();
             ResultSet resultSet = getIdOfCacherQuery.executeQuery(getIdOfCacher);
             return resultSet;
         }

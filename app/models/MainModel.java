@@ -5,9 +5,24 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class MainModel extends Observable{
+public class MainModel{
+    private static MainModel mainModel;
     protected Connection connectRef;
     private String dbFilePath = "jdbc:sqlite:vegStore.db";
+
+    private MainModel()
+    {
+        this.buidProjectDB();
+    };
+
+    public static MainModel createMainModel()
+    {
+        if(mainModel == null)
+        {
+            mainModel = new MainModel();
+        }
+        return mainModel;
+    }
 
     public void buidProjectDB()
     {
