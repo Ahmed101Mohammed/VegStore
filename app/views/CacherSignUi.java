@@ -3,7 +3,6 @@ package app.views;
 import java.awt.BorderLayout;
 import java.awt.Cursor;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -115,7 +114,6 @@ public class CacherSignUi implements IObserver{
                 String cacherPasswordString = new String(cacherPassword);
                 Cacher cacher = new Cacher(cacherName, cacherPasswordString);
                 Cacher cacherFullData = controller.addNewCacher(cacher);
-                System.out.println(cacherFullData.getId());
                 window.dispose();
             }
         });
