@@ -10,7 +10,6 @@ public class Product {
     {
         this.name = name;
         this.imagePath = imagePath;
-        this.id = id;
         this.price = price;
     }
 
@@ -30,7 +29,7 @@ public class Product {
         return price;
     }
 
-    public void setId(int Id)
+    public void setId(int id)
     {
         this.id = id;
     }
