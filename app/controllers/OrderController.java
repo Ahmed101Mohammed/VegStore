@@ -27,6 +27,7 @@ public class OrderController {
     public Order addNewOrder(Order order)
     {
         this.model.addNewOrder(order);
+        System.out.println("C: "+order.getCacherId());
         ResultSet idSet = this.model.getAllOrdersCount();
 
         try

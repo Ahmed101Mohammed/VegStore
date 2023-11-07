@@ -37,6 +37,7 @@ public class MakeOrderController {
 
         for(SubOrder subOrder:subOrders)
         {
+            System.out.println("Product id: "+ subOrder.getProductId());
             subOrderController.addNewSubOrder(subOrder);
         }
 

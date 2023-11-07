@@ -98,21 +98,27 @@ public class CacherController {
 
     public Cacher sign(Cacher cacher)
     {
+        System.out.println("Signing");
         ResultSet id = this.model.getCacherId(cacher);
         Cacher fullDataCacher = new Cacher(cacher.getName(), "////");
-
+        System.out.println("Before Try");
         try
         {
+            System.out.println("In Try");
+            //System.out.println("Before: " + id.getInt("id"));
             if(id.next())
             {
+                System.out.println("ID: " + id.getInt("id"));
                 fullDataCacher.setId(id.getInt("id"));
                 return fullDataCacher;
             }
         }
         catch (SQLException e)
         {
+            System.out.println("In Catch");
             System.out.println(e.getMessage());
         }
+        System.out.println("After Try");
 
         return this.addNewCacher(cacher);
     }
@@ -122,5 +128,13 @@ public class CacherController {
         this.view = cacherSignUi;
     }
 
+    public void connectToDB()
+    {
+        this.model.connectToDB();
+    }
 
+    public void closeConnectionToDB()
+    {
+        this.model.closeConnectionToDB();
+    }
 }

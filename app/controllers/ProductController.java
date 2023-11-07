@@ -45,6 +45,7 @@ public class ProductController {
                                                 result.getString("image_path"), 
                                                 result.getDouble("price"));
                 product.setId(result.getInt("id"));
+                System.out.println(product.getName() + " " +  product.getId());
                 products.add(product);
             }
         }
