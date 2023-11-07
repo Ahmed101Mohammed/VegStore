@@ -55,17 +55,34 @@ public class MainModel{
         this.createTablesInDB(appTables);
     }
 
-    private void connectToDB()
+    public void connectToDB()
     {
         try
         {
             this.connectRef = DriverManager.getConnection(this.dbFilePath);
+            System.out.println("Connection to DB is started.");
         }
         catch(SQLException e)
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to connect with DB.");
         }
+    }
+
+    public void closeConnect()
+    {
+        try
+            {
+                if(mainModel.connectRef != null)
+                {
+                    this.connectRef.close();
+                    System.out.println("Connection to SQLite has been closed, from CachdrModel.");
+                }
+            }
+        catch(SQLException e)
+            {
+                System.out.println(e.getMessage());
+            }
     }
 
     private void createTablesInDB(String[] tablesCreationQueries)

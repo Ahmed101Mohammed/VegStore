@@ -34,6 +34,7 @@ public class CacherModel extends Observable{
     public void addNewCacher(Cacher cacher)
     {
         String insertCacherQuery = "INSERT INTO cachers(name, password) VALUES(?,?);";
+        mainModel.connectToDB();
         try
         {
             PreparedStatement insert = mainModel.connectRef.prepareStatement(insertCacherQuery);
@@ -46,12 +47,13 @@ public class CacherModel extends Observable{
             System.out.println(e.getMessage());
             System.out.println("Field to save new cacher.");
         }
+        
     }
 
     public ResultSet getAllCachers()
     {
         String getAllCachersQuery = "SELECT * FROM cachers;";
-
+        mainModel.connectToDB();
         try
         {
             Statement getAllCachers = mainModel.connectRef.createStatement();
@@ -64,12 +66,13 @@ public class CacherModel extends Observable{
             System.out.println("Field to get all cachers from DB.");
             return null;
         }
+        
     }
 
     public ResultSet getCacherWithId(int id)
     {
         String getCacherWithId = "SELECT * FROM cachers WHERE id = "+ id +";";
-
+        mainModel.connectToDB();
         try
         {
             Statement getCacherWithIdQuery = mainModel.connectRef.createStatement();
@@ -81,12 +84,13 @@ public class CacherModel extends Observable{
             System.out.println(e.getMessage());
             return null;
         }
+        
     }
 
     public ResultSet getCacherId(Cacher cacher)
     {
         String getIdOfCacher = "SELECT id FROM cachers WHERE name LIKE \""+ cacher.getName() +"\" AND password LIKE \"" + cacher.getPassword() + "\";";
-
+        mainModel.connectToDB();
         try
         {
             Statement getIdOfCacherQuery = mainModel.connectRef.createStatement();
@@ -98,7 +102,16 @@ public class CacherModel extends Observable{
             System.out.println(e.getMessage());
             return null;
         }
+        
     }
 
+    public void connectToDB()
+    {
+        this.mainModel.connectToDB();
+    }
 
+    public void closeConnectionToDB()
+    {
+        this.mainModel.closeConnect();
+    }
 }
