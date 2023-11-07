@@ -33,7 +33,7 @@ public class CacherSignUi implements IObserver{
         cacherSignUi.buildBaseUi();
     }
 
-    private CacherSignUi(){}
+    private CacherSignUi(){this.controller.connectToDB();}
 
     public static CacherSignUi createCacherSignUi()
     {
@@ -113,8 +113,12 @@ public class CacherSignUi implements IObserver{
                 char[] cacherPassword = passwordInput.getPassword();
                 String cacherPasswordString = new String(cacherPassword);
                 Cacher cacher = new Cacher(cacherName, cacherPasswordString);
-                Cacher cacherFullData = controller.addNewCacher(cacher);
+                Cacher cacherFullData = controller.sign(cacher);
                 window.dispose();
+                System.out.print(cacherFullData.getName() + " "+ cacherFullData.getId());
+                ServicesUi servicesUi = ServicesUi.createServicesUi(cacherFullData);
+                servicesUi.buildBaseUi();
+                controller.closeConnectionToDB();
             }
         });
         // add to panel:

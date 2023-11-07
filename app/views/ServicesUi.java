@@ -102,7 +102,14 @@ public class ServicesUi{
         ImageIcon makeOrderIcon = new ImageIcon("cartIcon.png");
         this.makeOrderServiceMoveButton.setIcon(makeOrderIcon);
         this.makeOrderServiceMoveButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
-
+        this.makeOrderServiceMoveButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+                MakeOrderUi makeOrderUi = MakeOrderUi.createMakeOrderUi(cacher);
+                makeOrderUi.buildBaseUi();
+                window.dispose();
+            }
+        });
         this.last30DaysAnalaysisMoveButton = new JButton("last 30D Analysis");
         ImageIcon last30DaysAnalysisIcon = new ImageIcon("chartIcon.png");
         this.last30DaysAnalaysisMoveButton.setIcon(last30DaysAnalysisIcon);
