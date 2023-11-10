@@ -4,27 +4,27 @@ Application for a vegetable store with a static known number of Items to make a 
 ## Project description
 
 ### App features:
-The application can help you to track your cachers sells, for your store, And this is the big picture of the app services:
-- Make Order Service: This help the Cacher to make an order of a client.
-- Last 30 days analatics: This service Help U to shouw all sells for each cacher for last 30 days.
+The application can help you to track your cachers sales, for your store, And this is the big picture of the app services:
+- Make Order Service: This helps the Cacher to make an order for a client.
+- Last 30 days analytics: This service Helps you to show all sales for each cacher for the last 30 days.
 
 ### App technologies:
 For this app, I used these technologies:
 - Java programming language: for training reasons.
-- SWING: I used this liberary for building the UI of the application.
+- SWING: I used this library for building the UI of the application.
 - SQLite DB: The app is simple and I find that it will be enough.
-- Class diagrams with UML: This is one of the main reasons for building the app. I learned about this diagram and its principles and I built this project to test my knowledge.
-- CRC: This also type of diagrames that I used to present the conceptual design for the app.
-- Sequence diagrame: I used before building, to have pecture for how code will work for buing item or request analatics.
+- Class diagrams with UML: This is one of the main reasons for building the app. I learned about this diagram and its principles and built this project to test my knowledge.
+- CRC: This is also the type of diagram that I used to present the conceptual design for the app.
+- Sequence diagram: I used it before building, to have a picture of how code will work for buying items or request analytics.
 - JDBC driver: I used this driver to reference my app to help my Java code communicate with SQLite.
 
 ### Main challenges I face in this project:
 There are many challenges that I faced from the beginning of the planning for the application to the end of this process, and these are the main challenges:
-- In the beginning of the planning I find it's a challenge problem to break my project to components, that can applied MVC pattern.
-- In the middle of the project I found a problem to dealing with outdated technology like ***SWING***, and how to build the UI of the application.
-- At the end of the project I found a problem with the DB: I find some conviousing about closing and connecting the DB. It make a huge and strange bugs, That I should deal with them.
+- At the beginning of the planning I found it's a challenging problem to break my project into components, that could apply the MVC pattern.
+- In the middle of the project I found a problem dealing with outdated technology like ***SWING***, and how to build the UI of the application.
+- At the end of the project I found a problem with the DB: I found some confusion about closing and connecting the DB. It makes a huge and strange bugs, That I should deal with them.
 
-## Installing and Runing
+## Installing and Running
 ### Install the project:
 To install the project you can open your terminal and enter this command:
 ```
@@ -46,18 +46,18 @@ code .
 In the terminal when being in the directory of the project "VegStore".
 
 #### Fourth Step:
-- In VS code environment in the EXPLORER tap, you will find at the bottom this tap: "> JAVA PROJECTS".
+- In the VS code environment in the EXPLORER tap, you will find at the bottom this tap: "> JAVA PROJECTS".
 - Click on the tap and you will see a new tap called: "> [] VegStore".
 - Click on it and many taps will appear, Make the mouse over on this tap: "> [] Referenced Libraries"
 - Then the plus + sign will appear. Press it and find the file that you installed in the ***Therd Step***.
 
 #### Fifth Step (finally):
-In the VS Code environment go to the **app** folder and open **Main.java** file.
-Above the **main** method, you will find ***Run*** word, Press it.
-The project will run and the signing windo will be opened.
+In the VS Code environment go to the **app** folder and open the **Main.java** file.
+Above the **main** method, you will find the ***Run*** word, Press it.
+The project will run and the signing window will be opened.
 
 ## How to use the APP:
-You can easily use the application, The application easy to use, because there no any special or huge number of functionality.
+You can easily use the application, The application easy to use because there is no special or huge number of functionality.
 
 ## MIT License:
 MIT License
