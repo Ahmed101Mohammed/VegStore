@@ -27,7 +27,7 @@ public class CacherSignUi implements IObserver{
     private JPasswordField passwordInput;
     private JButton signButton;
     
-    // main method to test:
+    // Intry point:
     public static void main(String[] args) {
         CacherSignUi cacherSignUi = CacherSignUi.createCacherSignUi();
         cacherSignUi.buildBaseUi();
@@ -115,7 +115,6 @@ public class CacherSignUi implements IObserver{
                 Cacher cacher = new Cacher(cacherName, cacherPasswordString);
                 Cacher cacherFullData = controller.sign(cacher);
                 window.dispose();
-                System.out.print(cacherFullData.getName() + " "+ cacherFullData.getId());
                 ServicesUi servicesUi = ServicesUi.createServicesUi(cacherFullData);
                 servicesUi.buildBaseUi();
                 controller.closeConnectionToDB();

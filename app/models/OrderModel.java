@@ -8,23 +8,10 @@ import java.sql.Statement;
 import app.abstractData.Cacher;
 import app.abstractData.Date;
 import app.abstractData.Order;
-import app.abstractData.Product;
-import app.abstractData.SubOrder;
 
 public class OrderModel extends Observable{
     private MainModel mainModel = MainModel.createMainModel();
     private static OrderModel orderModel;
-    // main method for just testing:
-    public static void main(String[] args) {
-        Order order = new Order(1);
-        Product product = new Product("Apple", "/apple.jpg", 10);
-        product.setId(0);
-        SubOrder subOrder = new SubOrder(0, 10, product.getPrice() * 10);
-        order.addSubOrder(subOrder);
-        
-        OrderModel orderModel = OrderModel.createOrderModel();
-        orderModel.addNewOrder(order);
-    }
 
     private OrderModel()
     {
@@ -115,6 +102,13 @@ public class OrderModel extends Observable{
         }
     }
 
+    public void connectToDB()
+    {
+        this.mainModel.connectToDB();
+    }
 
-
+    public void closeConnectionToDB()
+    {
+        this.mainModel.closeConnect();
+    }
 }

@@ -10,11 +10,6 @@ public class MainModel{
     protected Connection connectRef;
     private String dbFilePath = "jdbc:sqlite:vegStore.db";
 
-    private MainModel()
-    {
-        this.buidProjectDB();
-    };
-
     public static MainModel createMainModel()
     {
         if(mainModel == null)
@@ -60,7 +55,7 @@ public class MainModel{
         try
         {
             this.connectRef = DriverManager.getConnection(this.dbFilePath);
-            System.out.println("Connection to DB is started.");
+       
         }
         catch(SQLException e)
         {
@@ -76,7 +71,6 @@ public class MainModel{
                 if(mainModel.connectRef != null)
                 {
                     this.connectRef.close();
-                    System.out.println("Connection to SQLite has been closed, from CachdrModel.");
                 }
             }
         catch(SQLException e)

@@ -11,7 +11,6 @@ import app.models.OrderModel;
 public class OrderController {
     private static OrderController orderController;
     private OrderModel model = OrderModel.createOrderModel();
-    // private null view;
 
     private OrderController(){}
 
@@ -27,7 +26,6 @@ public class OrderController {
     public Order addNewOrder(Order order)
     {
         this.model.addNewOrder(order);
-        System.out.println("C: "+order.getCacherId());
         ResultSet idSet = this.model.getAllOrdersCount();
 
         try
@@ -80,4 +78,13 @@ public class OrderController {
         return field;
     }
 
+    public void connectToDB()
+    {
+        this.model.connectToDB();
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.model.closeConnectionToDB();
+    }
 }

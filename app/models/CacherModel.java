@@ -10,13 +10,7 @@ import app.abstractData.Cacher;
 public class CacherModel extends Observable{
     private MainModel mainModel = MainModel.createMainModel();
     private static CacherModel cacherModel;
-    // main method for just testing.
-    public static void main(String[] args) {
-        CacherModel cacherModel = CacherModel.createCacherModel();
-        Cacher cacher = new Cacher("3asem", "3asem222");
-        cacherModel.addNewCacher(cacher);
-    }
-
+    
     private CacherModel()
     {
         mainModel.buidProjectDB();

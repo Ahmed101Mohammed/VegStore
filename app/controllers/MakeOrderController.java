@@ -28,16 +28,12 @@ public class MakeOrderController {
 
     public Order saveComplateOrderUnit(Order order)
     {
-        // save order
-        // set all subOrders orderId
-        // seve all subOrders
         Order orderComplateData = orderController.addNewOrder(order);
         orderComplateData.setAllSubOrdersId();
         ArrayList<SubOrder> subOrders = orderComplateData.getSubOrders();
 
         for(SubOrder subOrder:subOrders)
         {
-            System.out.println("Product id: "+ subOrder.getProductId());
             subOrderController.addNewSubOrder(subOrder);
         }
 
@@ -52,5 +48,19 @@ public class MakeOrderController {
     public void setView(MakeOrderUi makeOrderUi)
     {
         this.view = makeOrderUi;
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.orderController.closeConnectionToDB();
+        this.productController.closeConnectionToDB();
+        this.subOrderController.closeConnectionToDB();
+    }
+
+    public void connectToDB()
+    {
+        this.orderController.connectToDB();
+        this.productController.connectToDB();
+        this.subOrderController.connectToDB();
     }
 }

@@ -20,7 +20,6 @@ import app.abstractData.SubOrder;
 import app.controllers.MakeOrderController;
 
 public class MakeOrderUi implements IObserver{
-    private static MakeOrderUi makeOrderUi;
     private Cacher cacher;
     private MakeOrderController controller = MakeOrderController.createMakeOrderController();
     private JFrame window;
@@ -29,26 +28,9 @@ public class MakeOrderUi implements IObserver{
     private ArrayList<ProductUi> productsCards = new ArrayList<>();
     private JButton sellButton;
 
-    // Main method for testing:
-    public static void main(String[] args) {
-        Cacher cacher = new Cacher("ali", "1234");
-        cacher.setId(6);
-        MakeOrderUi makeOrderUi = MakeOrderUi.createMakeOrderUi(cacher);
-        makeOrderUi.buildBaseUi();
-    }
-
     public void update(){}
 
-    public static MakeOrderUi createMakeOrderUi(Cacher cacher)
-    {
-        if(makeOrderUi == null)
-        {
-            makeOrderUi = new MakeOrderUi();
-        }
-        makeOrderUi.setCacher(cacher);
-        return makeOrderUi;
-    }
-
+    
     public void buildBaseUi()
     {
         SwingUtilities.invokeLater(new Runnable() {
@@ -59,12 +41,12 @@ public class MakeOrderUi implements IObserver{
         });
     }
 
-    private MakeOrderUi(){}
-
-    private void setCacher(Cacher cacher)
+    public MakeOrderUi(Cacher cacher)
     {
         this.cacher = cacher;
+        controller.connectToDB();
     }
+
 
     private void baseUi()
     {
@@ -92,6 +74,7 @@ public class MakeOrderUi implements IObserver{
                 ServicesUi servicesUi = ServicesUi.createServicesUi(cacher);
                 servicesUi.buildBaseUi();
                 window.dispose();
+                controller.closeConnectionToDB();
             }
         });
 
@@ -105,6 +88,7 @@ public class MakeOrderUi implements IObserver{
         this.sellButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
+                controller.connectToDB();
                 Order order = new Order(cacher.getId());
                 for(ProductUi productUi:productsCards)
                 {
@@ -121,9 +105,9 @@ public class MakeOrderUi implements IObserver{
                 if(order.getSubOrders().size() > 0)
                 {
                     Order fullDataOrder = controller.saveComplateOrderUnit(order);
+                    controller.closeConnectionToDB();
                     RecieptUi recieptUi = RecieptUi.createRecieptUi(cacher, fullDataOrder);
                     recieptUi.buildBaseUi();
-                    // Appear ReceptUi and not closing this window.
                 }
             }
         });
@@ -139,7 +123,7 @@ public class MakeOrderUi implements IObserver{
         });
         
 
-        this.mainBody = new JPanel(new FlowLayout(FlowLayout.LEFT, 30, 30));
+        this.mainBody = new JPanel(new FlowLayout(FlowLayout.CENTER, 30, 30));
 
         this.window.add(top, BorderLayout.NORTH);
         this.window.add(buttom, BorderLayout.SOUTH);
@@ -148,17 +132,23 @@ public class MakeOrderUi implements IObserver{
 
     public void prepareMainBody()
     {
-        ArrayList<Product> products = controller.getAllProducts();
-        for (Product product:products)
+        if(this.productsCards.size() == 0)
         {
-            System.out.println("From source: " + product.getId());
-            this.productsCards.add(new ProductUi(product));
+            ArrayList<Product> products = controller.getAllProducts();
+            for (Product product:products)
+            {
+                this.productsCards.add(new ProductUi(product));
+            }
+            
         }
-        
         for (ProductUi productUi:this.productsCards)
-        {
-            System.out.println("Item Num: " + productUi.getItemNumbers());
-            this.mainBody.add(productUi.buildBaseUi());
-        }
+            {
+                this.mainBody.add(productUi.buildBaseUi());
+            }
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.controller.closeConnectionToDB();
     }
 }

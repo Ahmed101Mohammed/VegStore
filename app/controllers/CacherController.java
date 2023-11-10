@@ -13,13 +13,6 @@ public class CacherController {
     private CacherModel model = CacherModel.createCacherModel();
     private CacherSignUi view;
 
-    // main method to test:
-    public static void main(String[] args) {
-        CacherController cacherController = CacherController.createCacherController();
-        ArrayList<Cacher> cachers = cacherController.getAllCachers();
-        System.out.println(cachers.get(0).getPassword());
-    }
-
     private CacherController()
     {
         //NoThingDone
@@ -98,17 +91,12 @@ public class CacherController {
 
     public Cacher sign(Cacher cacher)
     {
-        System.out.println("Signing");
         ResultSet id = this.model.getCacherId(cacher);
         Cacher fullDataCacher = new Cacher(cacher.getName(), "////");
-        System.out.println("Before Try");
         try
         {
-            System.out.println("In Try");
-            //System.out.println("Before: " + id.getInt("id"));
             if(id.next())
             {
-                System.out.println("ID: " + id.getInt("id"));
                 fullDataCacher.setId(id.getInt("id"));
                 return fullDataCacher;
             }
@@ -118,7 +106,7 @@ public class CacherController {
             System.out.println("In Catch");
             System.out.println(e.getMessage());
         }
-        System.out.println("After Try");
+        
 
         return this.addNewCacher(cacher);
     }

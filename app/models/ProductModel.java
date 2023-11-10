@@ -56,4 +56,14 @@ public class ProductModel extends Observable{
             return null;
         }
     }
+
+    public void closeConnectionToDB()
+    {
+        this.mainModel.closeConnect();
+    }
+
+    public void connectToDB()
+    {
+        this.mainModel.connectToDB();
+    }
 }

@@ -9,14 +9,6 @@ public class SubOrderModel extends Observable{
     private MainModel mainModel = MainModel.createMainModel();
     private static SubOrderModel subOrderModel;
     
-    // main method just for testing:
-    public static void main(String[] args) {
-        SubOrder subOrder = new SubOrder(0, 20, 200);
-        subOrder.setOrderId(0);
-        SubOrderModel subOrderModel = SubOrderModel.creatSubOrderModel();
-        subOrderModel.addNewSubOrder(subOrder);    
-    }
-
     private SubOrderModel()
     {
         mainModel.buidProjectDB();
@@ -49,5 +41,14 @@ public class SubOrderModel extends Observable{
             System.out.println(e.getMessage());
             System.out.println("Field to save new SubOrder.");
         }
+    }
+    public void closeConnectionToDB()
+    {
+        this.mainModel.closeConnect();
+    }
+
+    public void connectToDB()
+    {
+        this.mainModel.connectToDB();
     }
 }

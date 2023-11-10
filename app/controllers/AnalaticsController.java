@@ -1,7 +1,5 @@
 package app.controllers;
 
-import java.math.BigDecimal;
-import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -43,5 +41,11 @@ public class AnalaticsController {
     public double getTotalPriceForAllOrdersInSpecificPeriod(Date date1, Date date2)
     {
         return this.orderController.getTotalPriceOfOrdersWithSpecificPeriod(date1, date2);
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.orderController.closeConnectionToDB();
+        this.cacherController.closeConnectionToDB();
     }
 }

@@ -10,17 +10,7 @@ import app.models.ProductModel;
 public class ProductController {
     private static ProductController productController;
     private ProductModel model = ProductModel.createProductModel();
-    // private null view;
-
-    // main method to test:
-    public static void main(String[] args) {
-        ProductController productController = ProductController.createProductController();
-        ArrayList<Product> products = productController.getAllProducts();
-        System.out.println("size: "+products.size());
-        Product apple = productController.getProductWithId(1);
-        System.out.println(apple.getName() + " " + apple.getPrice() + " " + apple.getImagePath());    
-    }
-
+    
     private ProductController(){};
 
     public static ProductController createProductController()
@@ -45,7 +35,6 @@ public class ProductController {
                                                 result.getString("image_path"), 
                                                 result.getDouble("price"));
                 product.setId(result.getInt("id"));
-                System.out.println(product.getName() + " " +  product.getId());
                 products.add(product);
             }
         }
@@ -78,5 +67,15 @@ public class ProductController {
         }
 
         return null;
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.model.closeConnectionToDB();
+    }
+
+    public void connectToDB()
+    {
+        this.model.connectToDB();
     }
 }

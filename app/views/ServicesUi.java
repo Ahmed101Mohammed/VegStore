@@ -23,13 +23,6 @@ public class ServicesUi{
     private JButton last30DaysAnalaysisMoveButton;
     private JButton backButton;
 
-    // main method to test:
-    public static void main(String[] args) {
-        Cacher cacher = new Cacher("Ahmed", "####");
-        cacher.setId(1);
-        ServicesUi servicesUi = ServicesUi.createServicesUi(cacher);
-        servicesUi.buildBaseUi();
-    }
     private ServicesUi(){};
     public static ServicesUi createServicesUi(Cacher cacher)
     {
@@ -105,7 +98,7 @@ public class ServicesUi{
         this.makeOrderServiceMoveButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e)
             {
-                MakeOrderUi makeOrderUi = MakeOrderUi.createMakeOrderUi(cacher);
+                MakeOrderUi makeOrderUi = new MakeOrderUi(cacher);
                 makeOrderUi.buildBaseUi();
                 window.dispose();
             }
@@ -114,7 +107,14 @@ public class ServicesUi{
         ImageIcon last30DaysAnalysisIcon = new ImageIcon("chartIcon.png");
         this.last30DaysAnalaysisMoveButton.setIcon(last30DaysAnalysisIcon);
         this.last30DaysAnalaysisMoveButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
-
+        this.last30DaysAnalaysisMoveButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+                AnalaticsUi analaticsUi = new AnalaticsUi(cacher);
+                analaticsUi.buildBaseUi();
+                window.dispose();
+            }
+        });
         middilPanel.add(this.makeOrderServiceMoveButton);
         middilPanel.add(this.last30DaysAnalaysisMoveButton);
     }

@@ -3,17 +3,12 @@ package app.views;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
-import javax.swing.table.DefaultTableModel;
 
 import app.abstractData.Cacher;
 import app.abstractData.Order;
@@ -38,6 +33,7 @@ public class RecieptUi {
         }
         recieptUi.setCacher(cacher);
         recieptUi.setOrder(order);
+        recieptUi.controller.connectToDB();
         return recieptUi;
     }
 
@@ -108,6 +104,12 @@ public class RecieptUi {
         JLabel totalOrderPrice = new JLabel(("Total Order Price: " + this.order.getPrice()));
         this.mainBody.add(cacherLabel);
         this.mainBody.add(totalOrderPrice); 
+        this.closeConnectionToDB();
+    }
+
+    public void closeConnectionToDB()
+    {
+        this.controller.closeConnectionToDB();
     }
 
     // Complete: you need to test the reciept and connect it with sell buttom. firstly commit every thing in git.
