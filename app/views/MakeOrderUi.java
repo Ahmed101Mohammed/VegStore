@@ -106,7 +106,7 @@ public class MakeOrderUi implements IObserver{
                 {
                     Order fullDataOrder = controller.saveComplateOrderUnit(order);
                     controller.closeConnectionToDB();
-                    RecieptUi recieptUi = RecieptUi.createRecieptUi(cacher, fullDataOrder);
+                    RecieptUi recieptUi = RecieptUi.createRecieptUi(fullDataOrder);
                     recieptUi.buildBaseUi();
                 }
             }

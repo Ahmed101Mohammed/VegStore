@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import app.abstractData.Cacher;
 import app.abstractData.Order;
 import app.abstractData.Product;
 import app.abstractData.SubOrder;
@@ -18,20 +17,18 @@ import app.controllers.ProductController;
 
 public class RecieptUi {
     private static RecieptUi recieptUi;
-    private Cacher cacher;
     private Order order;
     private JFrame window;
     private JButton printButton;
     private JPanel mainBody;
     private ProductController controller = ProductController.createProductController();
 
-    public static RecieptUi createRecieptUi(Cacher cacher, Order order)
+    public static RecieptUi createRecieptUi(Order order)
     {
         if(recieptUi == null)
         {
             recieptUi = new RecieptUi();
         }
-        recieptUi.setCacher(cacher);
         recieptUi.setOrder(order);
         recieptUi.controller.connectToDB();
         return recieptUi;
@@ -48,11 +45,6 @@ public class RecieptUi {
     }
 
     private RecieptUi(){}
-
-    private void setCacher(Cacher cacher)
-    {
-        this.cacher = cacher;
-    }
 
     private void setOrder(Order order) {
         this.order = order;
