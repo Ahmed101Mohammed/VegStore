@@ -26,12 +26,6 @@ public class CacherSignUi implements IObserver{
     private JTextField userNameInput;
     private JPasswordField passwordInput;
     private JButton signButton;
-    
-    // Intry point:
-    public static void main(String[] args) {
-        CacherSignUi cacherSignUi = CacherSignUi.createCacherSignUi();
-        cacherSignUi.buildBaseUi();
-    }
 
     private CacherSignUi(){this.controller.connectToDB();}
 
